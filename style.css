@@ -1,0 +1,341 @@
+
+ 
+ body {
+  background-color: white;/*#E0E0E0;*/
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1em;
+  width: 100%; 
+  margin: 0;
+  padding:0;
+  height: 100%;
+}
+
+#container{
+  display: flex;
+  background-color: white;
+  width: 98%;
+  margin: auto;
+  min-height: 100%;
+  overflow :hidden;
+} 
+
+     /*gauche*/
+
+     /*photo profil*/
+#left{   
+  background-color: #03A9F4;
+  width: 35%;
+  display: flex;
+  min-height: 100%;     
+}  
+       
+.photos{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: -20px;
+  min-height: 15%;          
+}
+
+figure{
+  border: 2px solid #283593;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%; 
+}
+
+img{
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+      /*contact*/
+
+aside h2{
+   font-family: 'Radley', serif;
+   font-size: 1.5em;
+   text-align: center;
+   color: #03A9F4;
+   background-color: #1976D2;
+   padding: 10px;
+} 
+
+aside p{
+   width: 80%;
+   margin: auto;
+   text-align: justify;
+} 
+
+.contact{
+   min-height: 14px;            
+} 
+
+.contact1 p{
+   margin-bottom: 10px;
+}
+
+   /*a propos de moi*/
+
+.description{
+  /*min-height: 57%; */
+       min-height: 56%;       
+}  
+
+.description1 p{
+  margin-bottom: 10px;
+}    
+
+  /*loisirs*/
+.loisirs{
+  /*min-height: 13%; */
+       min-height: 14px;
+} 
+    .loisirs1 p{
+      margin-bottom: 10px;
+    }
+    
+.loisirs i{
+    border: 2.5px #1976D2 solid;
+    border-radius: 50%;
+    padding: 10px;
+    color: #1976D2;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+ 
+      /*côté droit*/
+
+#right{
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;          
+}
+
+       /*nom*/
+.right-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 110px;
+    margin-bottom: 70px;
+}
+
+.prenom{
+  font-family: 'Radley', serif;
+  color: #03A9F4;
+}
+
+.right-element h1{       /*titre*/
+  font-family: 'Radley', serif;
+  font-size: 3em;
+  margin-bottom: -10px;
+}
+
+.right-element{
+  font-weight: bold;
+  font-family: 'Radley', serif;
+}
+
+.dev{
+  border-bottom: 2px solid #03A9F4;
+}
+
+
+      /*formation*/
+
+.ensemble h2{
+  font-family: Arial, sans-serif, serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  display: inline;
+}
+
+.list{
+  border-bottom: 2px solid #03A9F4; /*global :formation,expérience et recommandation*/
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.list i{
+ color: #03A9F4;
+ padding-right: 10px;
+}
+
+
+.date i{           /*global*/
+  color: #03A9F4;
+  padding-right: 20px;
+  
+}
+
+.date p{
+  display: inline;
+}
+
+.detail{   /*global*/
+  text-align: justify;
+}
+
+.formation1{
+  display: flex;
+  margin-top: -10px;
+}
+
+.date{
+  margin-top: 20px;
+  
+  min-width: 200px;
+}
+
+   /*expérience professionnelle*/
+
+.experience{
+  margin-top: 20px;
+  
+}
+
+.experience1{
+  display: flex;
+  margin-top: -10px;
+}
+ 
+      /*recommandation*/
+
+.recommandation{
+  margin-top: 20px;
+}
+
+.recommandation1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+      /*Partie Responsive*/
+
+  @media only screen and (min-width : 1824px){
+
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1024px){
+   
+   body{
+  font-size: 1.2em; 
+  min-width: 100px;
+ }
+
+#container{
+  display: flex;
+  flex-direction: column; 
+  }
+
+   /*côté gauche*/
+#left{
+  width: 100%;
+  }
+
+ figure{
+  border: 2px solid #283593;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; 
+  }
+
+ .description{
+   min-height: 10%;
+
+  }
+
+ .loisirs{
+   margin-bottom: 30px;
+ 
+  }
+
+  /*côté droit*/
+  
+  #right{
+    width: 95%;
+    margin-top: -110px;
+  }
+
+  .right-element{
+    text-align: center;
+  }
+}
+
+
+@media all and (max-width: 767.98px){
+   .loisirs{
+    display: inline-block;
+   }
+  
+  #container{
+    display: flex;
+    flex-direction: column; 
+  }
+    
+    /*côté gauche*/
+  #left{
+    min-width: 100%;
+  }
+
+  figure{
+  border: 2px solid #283593;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
+  }
+
+  .description{
+   min-height: 10%;
+  }
+
+  .loisirs{
+   width: 100%;
+   margin-bottom: 25px;
+  }
+
+    /*côté droit*/
+   
+    #right{
+    width: 95%;
+    margin-top: -110px;
+  }
+
+  .right-element{
+    text-align: center;
+  }
+
+  .right-element h1{
+    font-size: 2em;
+  }
+
+  .formation1, .experience1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+}
+
+ 
+ 
+
+
+  
