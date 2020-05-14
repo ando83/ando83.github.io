@@ -1,42 +1,41 @@
 
- 
- body {
-  background-color: white;/*#E0E0E0;*/
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1em;
-  width: 100%; 
-  margin: 0;
-  padding:0;
-  height: 100%;
+
+body
+{
+	width: 100%;
+	background-color: #E0E0E0;
+	font-family: 'Cormorant Garamond', sans-serif;
+	font-size: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-#container{
-  display: flex;
-  background-color: white;
-  width: 98%;
-  margin: auto;
-  min-height: 100%;
-  overflow :hidden;
-} 
+#conteneur{
+	display: flex;
+	background-color: white;
+	width: 95%;
+	margin: auto;
+}
 
-     /*gauche*/
+/*côté gauche*/
+aside{
+	width: 35%;
+	background-color: #03A9F4;
+	display: flex;
+	flex-direction: column;
 
-     /*photo profil*/
-#left{   
-  background-color: #03A9F4;
-  width: 35%;
-  display: flex;
-  min-height: 100%;     
-}  
-       
+}
+/*photos profil*/
+
 .photos{ 
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-bottom: -20px;
-  min-height: 15%;          
+  margin-bottom: -20px;    
 }
 
 figure{
@@ -51,6 +50,7 @@ img{
   height: inherit;
   border-radius: inherit;
 }
+
 
       /*contact*/
 
@@ -68,52 +68,52 @@ aside p{
    margin: auto;
    text-align: justify;
 } 
-
-.contact{
-   min-height: 14px;            
-} 
-
+ 
 .contact1 p{
-   margin-bottom: 10px;
+ margin-bottom: 10px;
 }
 
-   /*a propos de moi*/
+.contact1{
+  margin-top: 30px;
+}
 
-.description{
-  /*min-height: 57%; */
-       min-height: 56%;       
-}  
+/*a propos de moi*/
+
+.description1{
+  margin-top: 30px;
+}
 
 .description1 p{
   margin-bottom: 10px;
-}    
+}
 
-  /*loisirs*/
+/*loisirs*/
+
+.loisirs h2{
+	margin-bottom: 30px;
+}
+
 .loisirs{
-  /*min-height: 13%; */
-       min-height: 14px;
-} 
-    .loisirs1 p{
-      margin-bottom: 10px;
-    }
-    
+ padding-bottom: 20px;
+ margin-top: auto;
+ 
+}
+
 .loisirs i{
-    border: 2.5px #1976D2 solid;
-    border-radius: 50%;
-    padding: 10px;
-    color: #1976D2;
+ border: 2.5px #1976D2 solid;
+ border-radius: 50%;
+ padding: 10px;
+ color: #1976D2;
 }
 
 .logos{
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
 }
 
- 
       /*côté droit*/
 
-#right{
+main{
   width: 60%;
   margin-right: auto;
   margin-left: auto;          
@@ -224,33 +224,32 @@ aside p{
   margin-bottom: 10px;
 }
 
-.recommandation1 p{
+.recommandation p{
   width: 200px;
- }
-
-
+}
 
 
       /*Partie Responsive*/
 
-  @media only screen and (min-width : 1824px){
 
-  }
+ @media all and (min-width: 768px) and (max-width: 991.98px){
 
-  @media all and (min-width: 768px) and (max-width: 1024px){
    
    body{
   font-size: 1.2em; 
-  min-width: 100px;
- }
+  width: 100%;
+  }
 
-#container{
+
+#conteneur{
   display: flex;
   flex-direction: column; 
+  width: 99%;
   }
 
    /*côté gauche*/
-#left{
+
+   aside{
   width: 100%;
   }
 
@@ -261,19 +260,10 @@ aside p{
   border-radius: 50%; 
   }
 
- .description{
-   min-height: 10%;
-
-  }
-
- .loisirs{
-   margin-bottom: 30px;
- 
-  }
-
+  
   /*côté droit*/
   
-  #right{
+   main{
     width: 95%;
     margin-top: -110px;
   }
@@ -285,29 +275,30 @@ aside p{
 
 
 @media all and (max-width: 767.98px){
-   .loisirs{
-    display: inline-block;
-   }
+
+   body{
+    font-size: 1.2em; 
+    width: 100%;
+    background-color: white;
+  }
   
-  #container{
+  #conteneur{
     display: flex;
     flex-direction: column; 
   }
-    
+
+
     /*côté gauche*/
-  #left{
-    min-width: 100%;
+
+  aside{
+   width: 100%;
   }
 
   figure{
-  border: 2px solid #283593;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; 
-  }
-
-  .description{
-   min-height: 10%;
+   border: 2px solid #283593;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%; 
   }
 
   .loisirs{
@@ -317,8 +308,8 @@ aside p{
 
     /*côté droit*/
    
-    #right{
-    width: 95%;
+   main{
+    width: 98%;
     margin-top: -110px;
   }
 
@@ -334,12 +325,6 @@ aside p{
     display: flex;
     flex-direction: column;
   }
-
-  
 }
-
- 
- 
-
 
   
