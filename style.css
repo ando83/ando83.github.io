@@ -19,7 +19,8 @@ body
 	margin: auto;
 }
 
-/*côté gauche*/
+     /*côté gauche*/
+
 aside{
 	width: 35%;
 	background-color: #03A9F4;
@@ -27,6 +28,7 @@ aside{
 	flex-direction: column;
 
 }
+
 /*photos profil*/
 
 .photos{ 
@@ -52,7 +54,7 @@ img{
 }
 
 
-      /*contact*/
+/*contact*/
 
 aside h2{
    font-family: 'Radley', serif;
@@ -94,7 +96,7 @@ aside p{
 }
 
 .loisirs{
- padding-bottom: 20px;
+ padding-bottom: 35px;
  margin-top: auto;
  
 }
@@ -109,6 +111,7 @@ aside p{
 .logos{
   display: flex;
   justify-content: space-around;
+    
 }
 
       /*côté droit*/
@@ -116,16 +119,19 @@ aside p{
 main{
   width: 60%;
   margin-right: auto;
-  margin-left: auto;          
+  margin-left: auto;       
 }
 
-       /*nom*/
+/*nom*/
+
 .right-element{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 110px;
-    margin-bottom: 70px;
+  font-weight: bold;
+  font-family: 'Radley', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 110px;
+  margin-bottom: 70px;
 }
 
 .prenom{
@@ -139,17 +145,12 @@ main{
   margin-bottom: -10px;
 }
 
-.right-element{
-  font-weight: bold;
-  font-family: 'Radley', serif;
-}
-
 .dev{
   border-bottom: 2px solid #03A9F4;
 }
 
 
-      /*formation*/
+/*formation*/
 
 .ensemble h2{
   font-family: Arial, sans-serif, serif;
@@ -197,7 +198,7 @@ main{
   min-width: 200px;
 }
 
-   /*expérience professionnelle*/
+/*expérience professionnelle*/
 
 .experience{
   margin-top: 20px;
@@ -209,7 +210,7 @@ main{
   margin-top: -10px;
 }
  
-      /*recommandation*/
+/*recommandation*/
 
 .recommandation{
   margin-top: 20px;
@@ -221,7 +222,7 @@ main{
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: -10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .recommandation p{
@@ -235,7 +236,7 @@ main{
  @media all and (min-width: 768px) and (max-width: 991.98px){
 
    
-   body{
+body{
   font-size: 1.2em; 
   width: 100%;
   }
@@ -249,11 +250,11 @@ main{
 
    /*côté gauche*/
 
-   aside{
+aside{
   width: 100%;
   }
 
- figure{
+figure{
   border: 2px solid #283593;
   width: 300px;
   height: 300px;
@@ -263,9 +264,9 @@ main{
   
   /*côté droit*/
   
-   main{
-    width: 95%;
-    margin-top: -110px;
+main{
+  width: 95%;
+  margin-top: -110px;
   }
 
   .right-element{
@@ -288,7 +289,7 @@ main{
   }
 
 
-    /*côté gauche*/
+  /*côté gauche*/
 
   aside{
    width: 100%;
@@ -306,7 +307,7 @@ main{
    margin-bottom: 25px;
   }
 
-    /*côté droit*/
+  /*côté droit*/
    
    main{
     width: 98%;
@@ -315,6 +316,7 @@ main{
 
   .right-element{
     text-align: center;
+
   }
 
   .right-element h1{
