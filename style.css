@@ -239,6 +239,7 @@ main{
    
 body{
   width: 100%;
+  font-family: 'Cormorant Garamond', sans-serif;
   }
 
 
@@ -289,6 +290,7 @@ main{
     font-size: 1em; 
     width: 100%;
     background-color: white;
+    font-family: 'Cormorant Garamond', sans-serif;
   }
   
   #conteneur{
