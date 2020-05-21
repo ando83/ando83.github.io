@@ -72,6 +72,10 @@ aside p{
    margin: auto;
    text-align: justify;
 } 
+
+ .contact1 a{
+  color: #000000;
+ }
  
 .contact1 p{
  margin-bottom: 10px;
